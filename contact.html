@@ -15,7 +15,7 @@
     header {
       background-color: #000; /* black header */
       color: white;
-      padding: 15px 30px;
+      padding: 8px 0px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -151,12 +151,15 @@
 
 <!-- Header -->
 <header>
-  <div class="logo">
-    <img src="images/logo.jpeg" alt="Logo">
-    <h1>AI Mental Health & Fitness Check Robo</h1>
-  </div>
-  <nav>
-    <ul>
+  <nav class="navbar">
+    <!-- Left side: Logo + Title -->
+    <div class="navbar-left">
+      <img src="images/logo.jpeg" alt="Logo" class="logo">
+      <span class="site-title">AI Mental Health & Fitness Check Robo</span>
+    </div>
+
+    <!-- Right side: Navigation links -->
+    <ul class="navbar-right">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="features.html">Features</a></li>
@@ -168,6 +171,57 @@
     </ul>
   </nav>
 </header>
+
+<style>
+/* Navbar Styling */
+.navbar {
+  background: #000; /* black background */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* left logo/title and right nav */
+  align-items: center;
+  padding: 8px 7px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left side: logo + title */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo {
+  height: 32px;
+  border-radius: 50%;
+}
+.site-title {
+  font-size: 1em;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Right side: navigation links */
+.navbar-right {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* small spacing between links */
+  margin: 0;
+  padding: 0;
+}
+.navbar-right li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar-right li a:hover {
+  color: #00aaff; /* hover color */
+}
+</style>
 
 <!-- Page Title -->
 <div class="page-title">Contact Us</div>
