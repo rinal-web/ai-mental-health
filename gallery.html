@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | Humanoid for Humanity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+  <div class="logo">Humanoid for Humanity</div>
+  <ul>
+     <li><a href="index.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Home</a></li>
+    <li><a href="about.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">About</a></li>
+    <li><a href="features.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Features</a></li>
+    <li><a href="components.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Components</a></li>
+    <li><a href="gallery.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Gallery</a></li>
+    <li><a href="team.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Team</a></li>
+    <li><a href="contact.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Contact</a></li>
+    <li><a href="future.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Future Scope</a></li>
+  </ul>
+</nav>
+
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="robot1.jpg" alt="Prototype">
+      <img src="robot2.jpg" alt="Testing">
+      <img src="robot3.jpg" alt="Team with Robot">
+    </div>
+  </section>
+<div 
+class="card-gallery">
+  <div class="card">
+    <img src="images/AIcaregiver.jpeg" alt="Robot Reading">
+    <h3>Compassionate Companionship</h3>
+    <p>A humanoid robot reading to an elder, showing AI-powered empathy.</p>
+  </div>
+  <div class="card">
+    <img src="images/robot2.jpeg" alt="Robot Assisting">
+    <h3>AI Caregiver Support</h3>
+    <p>Robots assisting in daily tasks for improved wellbeing.</p>
+  </div>
+</div>
+
+<style>
+.card-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  max-width: 250px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card h3 {
+  color: #007BFF;
+  margin: 10px 0;
+}
+</style>
+
+
+   <!-- Footer -->
+   <footer>
+    <div>
+      <h3>Dr TITAn</h3>
+      <p>AI-Powered Compassion for Mental Health & Wellbeing</p>
+    </div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: yourteam@example.com</p>
+      <p>Phone: +91-XXXXXXXXXX</p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" class="facebook"><img src="images/facebook.jpeg" alt="Facebook" /></a>
+        <a href="#" class="twitter"><img src="images/twitter.jpeg" alt="Twitter" /></a>
+        <a href="#" class="instagram"><img src="images/instagram.jpeg" alt="Instagram" /></a>
+        <a href="#" class="linkedin"><img src="images/linkedin.jpeg" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>© 2026 AI Mental Health & Fitness Check Robo | Built with <i class="fas fa-robot"></i></p>
+  </div>
+
+  <!-- Animation Script -->
+  <script>
+    const animatedElements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animatedElements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.6s ease-out';
+      observer.observe(el);
+    });
+  </script>
+
+  <style>
+    /* Footer hover brand colors */
+    .social-icons a.facebook:hover img { filter: invert(32%) sepia(100%) saturate(747%) hue-rotate(190deg) brightness(95%) contrast(90%); }
+    .social-icons a.twitter:hover img { filter: invert(53%) sepia(100%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(90%); }
+    .social-icons a.linkedin:hover img { filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(90%) contrast(90%); }
+    .social-icons a.instagram:hover img { filter: invert(48%) sepia(100%) saturate(500%) hue-rotate(320deg) brightness(100%) contrast(90%); }
+  </style>
+
+</body>
+</html>

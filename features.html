@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Features - AI Mental Health & Fitness Check Robo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; background:#f4f4f4; color:#333; }
+    nav { background:#222; color:white; display:flex; justify-content:space-between; align-items:center; padding:15px 30px; position:fixed; width:100%; top:0; z-index:1000; }
+    nav .logo { font-size:1.2em; font-weight:bold; }
+    nav ul { list-style:none; display:flex; margin:0; padding:0; }
+    nav ul li { margin:0 15px; }
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; }
+    nav ul li a:hover { color:#00bfff; }
+
+    header { 
+      background:url('images/features-banner.jpeg') no-repeat center center/cover; 
+      height:50vh; 
+      display:flex; 
+      flex-direction:column; 
+      justify-content:center; 
+      align-items:center; 
+      text-align:center; 
+      color:white; 
+      padding-top:60px; 
+    }
+    header h1 { font-size:2.5em; margin-bottom:10px; color:#00bfff; background:rgba(0,0,0,0.5); padding:10px 20px; border-radius:8px; }
+    header p { font-size:1.2em; background:rgba(0,0,0,0.4); padding:8px 15px; border-radius:6px; max-width:800px; }
+
+    section { padding:60px 20px; text-align:center; }
+
+    /* Intro block */
+    .intro-block {
+      max-width:900px;
+      margin:auto;
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    .intro-block h2 { color:#007BFF; margin-bottom:15px; }
+    .intro-block p { font-size:1.1em; line-height:1.6; }
+
+    /* Smart AI Wellness System */
+    .system-grid { display:flex; justify-content:center; flex-wrap:wrap; gap:30px; margin-top:40px; }
+    .system-card {
+      background:white;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      padding:25px;
+      max-width:400px;
+      flex:1;
+      text-align:left;
+      transition: all 0.3s ease;
+    }
+    .system-card:hover {
+      transform: translateY(-5px);
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    }
+    .system-card i { font-size:40px; color:#007BFF; margin-bottom:15px; }
+    .system-card h3 { color:#007BFF; margin-bottom:10px; }
+    .system-card p { line-height:1.6; }
+
+    /* Left image + right text */
+    .split-section { display:flex; justify-content:center; align-items:center; flex-wrap:wrap; margin-top:40px; }
+    .split-section img { max-width:400px; border-radius:10px; margin:20px; }
+    .split-text { max-width:500px; margin:20px; text-align:left; }
+    .split-text h2 { color:#007BFF; margin-bottom:15px; }
+
+    /* Four subtopics */
+    .sub-grid { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; margin-top:30px; }
+    .sub-card {
+      background:white;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      padding:20px;
+      max-width:250px;
+      flex:1;
+      text-align:center;
+    }
+    .sub-card i { font-size:35px; color:#007BFF; margin-bottom:10px; }
+    .sub-card h4 { color:#007BFF; margin-bottom:10px; }
+    .sub-card p { font-size:0.95em; line-height:1.5; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">AI Mental Health & Fitness Check Robo</div>
+    <ul>
+       <li><a href="index.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Home</a></li>
+    <li><a href="about.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">About</a></li>
+    <li><a href="features.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Features</a></li>
+    <li><a href="components.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Components</a></li>
+    <li><a href="gallery.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Gallery</a></li>
+    <li><a href="team.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Team</a></li>
+    <li><a href="contact.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Contact</a></li>
+    <li><a href="future.html" style="color:white; text-decoration:none; font-size:0.85em; font-weight:bold;">Future Scope</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <header>
+    <h1>AI Robo Features & Smart Capabilities</h1>
+    <p>Explore the intelligent features that enable our AI Mental Health and Fitness Check Robo to support emotional well-being and promote a healthier lifestyle.</p>
+  </header>
+
+  <!-- Intro -->
+  <section>
+    <div class="intro-block">
+      <h2>Smart AI Wellness System</h2>
+      <p>Combining emotion recognition and intelligent interaction to create a supportive companion for mental health awareness and healthy living.</p>
+    </div>
+  </section>
+
+  <!-- System Overview -->
+  <section>
+    <div class="system-grid">
+      <div class="system-card">
+        <i class="fas fa-smile"></i>
+        <h3>Emotion Detection System</h3>
+        <p>The system uses Artificial Intelligence and facial recognition technology to analyze a user’s facial expressions and identify emotional states such as happiness, sadness, anger, or neutrality. By understanding these emotions, the robot can recognize changes in mood and respond in a supportive and meaningful way.</p>
+      </div>
+      <div class="system-card">
+        <i class="fas fa-heartbeat"></i>
+        <h3>AI Health Interaction System</h3>
+        <p>The robot interacts with users by providing motivational messages, relaxation suggestions, and fitness recommendations based on the detected emotional state. This intelligent interaction helps encourage positive thinking, reduce stress, and promote both mental and physical well-being.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Left image + right text -->
+  <section>
+    <div class="split-section">
+      <img src="images/emotion-ai.jpeg" alt="AI Emotion System">
+      <div class="split-text">
+        <h2>Designed to understand human emotions, provide supportive interaction, and promote mental and physical well-being through intelligent AI.</h2>
+        <p>Our AI Mental Health and Fitness Check Robo is designed to understand human emotions and provide supportive interaction. By combining emotion detection with intelligent responses, the system helps users become more aware of their mental state and encourages healthy lifestyle habits.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Four subtopics -->
+  <section>
+    <div class="sub-grid">
+      <div class="sub-card">
+        <i class="fas fa-comments"></i>
+        <h4>Smart User Interaction</h4>
+        <p>The robot communicates in a simple and friendly manner, making users feel comfortable while interacting and sharing their emotions.</p>
+      </div>
+      <div class="sub-card">
+        <i class="fas fa-smile-beam"></i>
+        <h4>AI Emotion Detection</h4>
+        <p>The system analyzes facial expressions using Artificial Intelligence to detect emotions like happy, sad, angry, or neutral.</p>
+      </div>
+      <div class="sub-card">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h4>Intelligent Wellness Response</h4>
+        <p>Based on the detected mood, the robot provides motivational messages, relaxation tips, and fitness suggestions to support well-being.</p>
+      </div>
+      <div class="sub-card">
+        <i class="fas fa-dumbbell"></i>
+        <h4>Health & Lifestyle Awareness</h4>
+        <p>The system encourages users to maintain healthy habits by promoting mental wellness and physical activity in daily life.</p>
+      </div>
+    </div>
+
+     <!-- Footer -->
+   <footer>
+    <div>
+      <h3>Dr TITAn</h3>
+      <p>AI-Powered Compassion for Mental Health & Wellbeing</p>
+    </div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: yourteam@example.com</p>
+      <p>Phone: +91-XXXXXXXXXX</p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" class="facebook"><img src="images/facebook.jpeg" alt="Facebook" /></a>
+        <a href="#" class="twitter"><img src="images/twitter.jpeg" alt="Twitter" /></a>
+        <a href="#" class="instagram"><img src="images/instagram.jpeg" alt="Instagram" /></a>
+        <a href="#" class="linkedin"><img src="images/linkedin.jpeg" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>© 2026 AI Mental Health & Fitness Check Robo | Built with <i class="fas fa-robot"></i></p>
+  </div>
+
+  <!-- Animation Script -->
+  <script>
+    const animatedElements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animatedElements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.6s ease-out';
+      observer.observe(el);
+    });
+  </script>
+
+  <style>
+    /* Footer hover brand colors */
+    .social-icons a.facebook:hover img { filter: invert(32%) sepia(100%) saturate(747%) hue-rotate(190deg) brightness(95%) contrast(90%); }
+    .social-icons a.twitter:hover img { filter: invert(53%) sepia(100%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(90%); }
+    .social-icons a.linkedin:hover img { filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(90%) contrast(90%); }
+    .social-icons a.instagram:hover img { filter: invert(48%) sepia(100%) saturate(500%) hue-rotate(320deg) brightness(100%) contrast(90%); }
+  </style>
+
+</body>
+</html>

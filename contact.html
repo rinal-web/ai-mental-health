@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - AI Mental Health & Fitness Check Robo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff; /* white background */
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #000; /* black header */
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+   header .logo { display: flex; align-items: center; }
+    header img { height: 70px; margin-right: 15px; }
+    header h1 { font-size: 1.5em; margin: 0; }
+    nav ul { list-style:none; display:flex; margin:0; padding:0; gap:20px; }
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; }
+    nav ul li a:hover { color:#32CD32; }
+
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2.2em;
+      color: #007BFF;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 450px;
+      margin: 0 auto 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .contact-form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contact-form button:hover { background-color: #0056b3; }
+
+    /* FAQ Section */
+    .faq-section { max-width: 900px; margin: 0 auto 40px; padding: 0 20px; }
+    .faq-section h2 { text-align: center; color: #007BFF; margin-bottom: 20px; }
+    .faq { background: white; padding: 15px; margin-bottom: 10px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .faq h3 { margin: 0; color: #32CD32; }
+    .faq p { margin-top: 8px; }
+
+    /* Contact Info */
+    .contact-info { text-align: center; margin-bottom: 30px; }
+    .contact-info h2 { color: #007BFF; margin-bottom: 10px; }
+    .contact-info p { font-size: 1.1em; }
+
+    /* Operating Hours */
+    .hours { text-align: center; margin-bottom: 40px; }
+    .hours h2 { color: #007BFF; margin-bottom: 10px; }
+
+    /* Team Cards */
+    .team { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-bottom: 40px; }
+    .team-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      max-width: 220px;
+      text-align: center;
+    }
+    .team-card img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+    .team-card h3 { margin: 5px 0; color: #007BFF; }
+    .team-card h4 { margin: 5px 0; color: #32CD32; }
+
+    /* Testimonials */
+    .testimonials { max-width: 900px; margin: 0 auto 40px; text-align: center; }
+    .testimonial {
+      background: white;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .testimonial p { font-style: italic; }
+    .testimonial h4 { margin-top: 10px; color: #007BFF; }
+
+    /* Map */
+    .map { text-align: center; margin-bottom: 30px; }
+    .map iframe { width: 80%; height: 300px; border: none; border-radius: 10px; }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+      display: inline-block;
+      margin: 0 auto 40px;
+      text-align: center;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .whatsapp-btn:hover { background-color: #128C7E; }
+
+    /* Footer */
+    footer {
+      background:#000;
+      color:white;
+      padding:10px 20px; /* reduced height */
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    footer div { text-align:center; }
+    .social-icons img { width:24px; margin:0 5px; }
+    .quick-links a { color:#aaa; margin:0 8px; text-decoration:none; }
+    .quick-links a:hover { color:#32CD32; }
+    .copyright {
+      width:100%;
+      text-align:center;
+      background:#111;
+      color:#aaa;
+      padding:8px;
+      margin-top:10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="images/logo.jpeg" alt="Logo">
+    <h1>AI Mental Health & Fitness Check Robo</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="components.html">Components</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="future.html">Future Scope</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Page Title -->
+<div class="page-title">Contact Us</div>
+
+<!-- Contact Form -->
+<div class="contact-form">
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="text" placeholder="Subject" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq"><h3>What is the purpose of this project?</h3><p>To promote mental health awareness and physical fitness using AI-powered emotional analysis and wellness routines.</p></div>
+  <div class="faq"><h3>How does the Robo detect emotions?</h3><p>It uses facial recognition, voice tone analysis, and text sentiment to identify emotional states.</p></div>
+  <div class="faq"><h3>Can I use this in schools or homes?</h3><p>Yes, the Robo is designed for use in educational, domestic, and healthcare environments.</p></div>
+  <div class="faq"><h3>Is my data safe and private?</h3><p>Yes, all user data is handled securely and used only for wellness.</p></div>
+  <div class="faq"><h3>Can the Robo integrate with wearables?</h3><p>Yes, it can connect with fitness trackers to provide holistic health insights.</p></div>
+  <div class="faq"><h3>Is there a subscription plan?</h3><p>Currently, it is free for schools and healthcare pilots, with premium features planned.</p></div>
+  <div class="faq"><h3>Can doctors access the data?</h3><p>Yes, with user consent, doctors can securely access wellness logs for better treatment.</p></div>
+  <div class="faq"><h3>Does it provide emergency alerts?</h3><p>Yes, the Robo can send alerts to caregivers or family members in case of detected distress.</p></div>
+  <div class="faq"><h3>Is it suitable for children?</h3><p>Yes, it includes child-friendly modes with simplified interactions and parental controls.</p></div>
+</div>
+</div>
+
+<!-- Get in Touch -->
+<div class="contact-info">
+  <h2>Get in Touch</h2>
+  <p>Email: h4hproject@gmail.com</p>
+  <p>Location: Mysore, India</p>
+</div>
+
+<!-- Map -->
+<div class="map">
+  <iframe src="https://www.google.com/maps?q=Mysore,India&output=embed"></iframe>
+</div>
+
+<!-- WhatsApp -->
+<div style="text-align:center;">
+  <a class="whatsapp-btn" href="https://wa.me/919999999999" target="_blank">Chat with us on WhatsApp</a>
+</div>
+<!-- Operating Hours -->
+<div class="hours">
+  <h2>Operating Hours</h2>
+  <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
+  <p>Saturday: 10:00 AM – 4:00 PM</p>
+  <p>Sunday: Closed</p>
+</div>
+
+<!-- Testimonials -->
+<div class="testimonials">
+  <h2>What People Say</h2>
+  <div class="testimonial">
+    <p>"This Robo helped me manage stress better than any app I’ve used before."</p>
+    <h4>— Priya, Student</h4>
+  </div>
+  <div class="testimonial">
+  <p>"The emotional support features are truly innovative."</p>
+  <h4>— Meera, Teacher</h4>
+</div>
+<div class="testimonial">
+  <p>"It helped our workplace wellness program succeed."</p>
+  <h4>— Karan, Manager</h4>
+</div>
+  <div class="testimonial">
+    <p>"The personalized fitness plans are motivating and easy to follow."</p>
+    <h4>— Arjun, Athlete</h4>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div>
+    <h3>Quick Links</h3>
+    <div class="quick-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="components.html">components</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="future.html">Future Scope</a>
+    </div>
+  </div>
+  <div>
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.jpeg" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.jpeg" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.jpeg" alt="Instagram"></a>
+      <a href="#"><img src="images/linkedin.jpeg" alt="LinkedIn"></a>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <p>© 2026 AI Mental Health & Fitness Check Robo | Built with <i class="fas fa-robot"></i></p>
+</div>

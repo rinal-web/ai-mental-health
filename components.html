@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Components - AI Mental Health & Fitness Check Robo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo { display: flex; align-items: center; }
+    header img { height: 70px; margin-right: 15px; }
+    header h1 { font-size: 1.5em; margin: 0; }
+    nav ul { list-style:none; display:flex; margin:0; padding:0; gap:20px; }
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; }
+    nav ul li a:hover { color:#32CD32; }
+
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2.2em;
+      color: #007BFF;
+    }
+
+    /* Component Sections */
+    .component-section {
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    .component-section h2 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+    .component-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .sub-component {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .sub-component img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .sub-component h3 {
+      color: #32CD32;
+      margin: 5px 0;
+    }
+    .sub-component p {
+      font-size: 0.95em;
+    }
+
+    /* Footer */
+    footer {
+      background:#000;
+      color:white;
+      padding:10px 20px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    footer div { text-align:center; }
+    .social-icons img { width:24px; margin:0 5px; }
+    .quick-links a { color:#aaa; margin:0 8px; text-decoration:none; }
+    .quick-links a:hover { color:#32CD32; }
+    .copyright {
+      width:100%;
+      text-align:center;
+      background:#111;
+      color:#aaa;
+      padding:6px;
+      margin-top:5px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="images/logo.jpeg" alt="Logo">
+    <h1>AI Mental Health & Fitness Check Robo</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="components.html">Components</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="future.html">Future Scope</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+<!-- Page Title -->
+<div class="page-title"> Hardware Components</div>
+
+<!-- Power System -->
+<div class="component-section">
+  <h2>Power System</h2>
+  <div class="component-grid">
+    <div class="sub-component">
+      <img src="images/li-po.jpg" alt="Li-Po Battery">
+      <h3>Li‑Po Battery</h3>
+      <p>Provides high energy density and lightweight power source for the robot.</p>
+    </div>
+    <div class="sub-component">
+      <img src="images/buck-converter.jpg" alt="Buck Converter">
+      <h3>Buck Converter</h3>
+      <p>Regulates voltage efficiently, ensuring safe and stable supply to sensitive electronics.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Sensors -->
+<div class="component-section">
+  <h2>Sensors</h2>
+  <div class="component-grid">
+    <div class="sub-component"><img src="images/ultrasonic.jpg" alt="Ultrasonic"><h3>Ultrasonic</h3><p>Measures distance using sound waves for obstacle detection.</p></div>
+    <div class="sub-component"><img src="images/ldr.webp" alt="LDR"><h3>LDR</h3><p>Detects light intensity for adaptive brightness and mood lighting.</p></div>
+    <div class="sub-component"><img src="images/microphone.webp" alt="Microphone"><h3>Microphone</h3><p>Captures voice tone and sound for emotional analysis.</p></div>
+    <div class="sub-component"><img src="images/touch.jpg" alt="Touch Sensor"><h3>Touch Sensor</h3><p>Detects human touch for interactive responses.</p></div>
+    <div class="sub-component"><img src="images/pulse-oximeter.webp" alt="Pulse Oximeter"><h3>Pulse Oximeter</h3><p>Measures heart rate and oxygen levels for health monitoring.</p></div>
+  </div>
+</div>
+
+<!-- Controllers -->
+<div class="component-section">
+  <h2>Controllers</h2>
+  <div class="component-grid">
+    <div class="sub-component"><img src="images/esp32.jpg" alt="ESP32"><h3>ESP32</h3><p>Powerful microcontroller with Wi‑Fi and Bluetooth for connectivity.</p></div>
+    <div class="sub-component"><img src="images/arduino-uno.jpg" alt="Arduino UNO"><h3>Arduino UNO</h3><p>Versatile microcontroller board for prototyping and control tasks.</p></div>
+  </div>
+</div>
+
+<!-- Motors & Drivers -->
+<div class="component-section">
+  <h2>Motors & Drivers</h2>
+  <div class="component-grid">
+    <div class="sub-component"><img src="images/mg995.jpg" alt="MG995"><h3>MG995</h3><p>Reliable servo motor for precise angular movements.</p></div>
+    <div class="sub-component"><img src="images/mg996.png" alt="MG996R"><h3>MG996R</h3><p>High‑torque servo motor for stronger mechanical actions.</p></div>
+    <div class="sub-component"><img src="images/johnson-gear.jpg" alt="Johnson Gear Motor"><h3>Johnson Gear Motor</h3><p>Durable motor used for continuous rotation and heavy loads.</p></div>
+    <div class="sub-component"><img src="images/bts7960.jpg" alt="BTS7960 Driver"><h3>BTS7960 Driver</h3><p>High‑power motor driver for controlling large DC motors.</p></div>
+  </div>
+</div>
+
+<!-- Structural Materials -->
+<div class="component-section">
+  <h2>Structural Materials</h2>
+  <div class="component-grid">
+    <div class="sub-component"><img src="images/sunboard.webp" alt="Sunboard"><h3>Sunboard</h3><p>Strong yet lightweight material for structural support.</p></div>
+  </div>
+</div>
+
+<!-- Displays & Indicators -->
+<div class="component-section">
+  <h2>Displays & Indicators</h2>
+  <div class="component-grid">
+    <div class="sub-component"><img src="images/lcd.jpg" alt="LCD"><h3>LCD</h3><p>Displays text and data for user communication.</p></div>
+    <div class="sub-component"><img src="images/led.webp" alt="LED"><h3>LED</h3><p>Provides visual signals and indicators.</p></div>
+    <div class="sub-component"><img src="images/resistor.webp" alt="Resistor"><h3>Resistors</h3><p>Controls current flow and protects electronic components.</p></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div>
+    <h3>Dr TITAn</h3>
+    <p>AI-Powered Compassion for Mental Health & Wellbeing</p>
+  </div>
+  <div>
+    <h3>Contact Us</h3>
+    <p>Email: yourteam@example.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+  </div>
+  <div>
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="#" class="facebook"><img src="images/facebook.jpeg" alt="Facebook" /></a>
+      <a href="#" class="twitter"><img src="images/twitter.jpeg" alt="Twitter" /></a>
+      <a href="#" class="instagram"><img src="images/instagram.jpeg" alt="Instagram" /></a>
+      <a href="#" class="linkedin"><img src="images/linkedin.jpeg" alt="LinkedIn" /></a>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <p>© 2026 AI Mental Health & Fitness Check Robo | Built with <i class="fas fa-robot"></i></p>
+</div>
+
+</body>
+</html>
